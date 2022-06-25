@@ -1,11 +1,13 @@
 {
    "name": "@jwevans/better-code-blocks",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "",
    "main": "index.js",
+   "types": "./dist/index.d.ts",
    "scripts": {
       "build": "tsc --build",
-      "dev": "tsc -w"
+      "dev": "tsc -w",
+      "prepublishOnly": "npm run build"
    },
    "keywords": [],
    "author": "Jacob Evans <jacob@jwevans.dev> (https://jwevans.dev/)",
