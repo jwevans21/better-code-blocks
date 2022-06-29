@@ -30,7 +30,7 @@ const chartjsPlugin = (md, options) => {
                     env,
                 ])}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src=".https://raw.githubusercontent.com/jwevans21/better-code-blocks/main/dist/browser/chartjs.js"></script>`;
+      <script src="https://raw.githubusercontent.com/jwevans21/better-code-blocks/main/browser/chartjs.js"></script>`;
             }
         }
         return defaultRenderer.apply(md.renderer, [tokens, options, env]);
