@@ -40,7 +40,7 @@ const mermaidPlugin: PluginWithOptions<null> = (md, options) => {
          if (token.type === 'fence' && mermaidRegex.test(token.info)) {
             return `${defaultRenderer(tokens, options, env)}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.3/mermaid.min.js" integrity="sha512-E/owfVh8/U1xwhvIT4HSI064DRc1Eo/xf7AYax84rt9gVqA8tc/JNH/lvTl1tuw9PUHQIMGUtObkjYkgRjFqAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://raw.githubusercontent.com/jwevans21/better-code-blocks/main/browser/mermaid.js"></script>`;
+      <script src="https://unpkg.com/@jwevans/better-code-blocks/browser/mermaid.js"></script>`;
          }
       }
       return defaultRenderer(tokens, options, env);
